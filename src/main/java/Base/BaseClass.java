@@ -83,7 +83,7 @@ public class BaseClass {
         String driverLocation=properties.getProperty("DriverLocation");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
-        options.addArguments("user-data-dir=selenium");
+     //   options.addArguments("user-data-dir=selenium");
         options.addArguments("page_load_strategy\": \"none");
         options.setHeadless(Boolean.parseBoolean(properties.getProperty("headless")));
         //  options.addArguments("--headless"); //!!!should be enabled for Jenkins
